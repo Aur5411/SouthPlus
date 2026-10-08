@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+}
+
+def ksProps = new Properties()
+def ksPropsFile = rootProject.file('keystore.properties')
+if (ksPropsFile.exists()) {
+    ksProps.load(new FileInputStream(ksPropsFile))
+}
+
+android {
+    namespace 'net.northplus.app'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "net.northplus.app"
+        minSdk 26
+        targetSdk 34
+        versionCode 5
+        versionName "1.4.0"
+        resourceConfigurations += ['zh', 'en']
+    }
+
+    signingConfigs {
+        release {
+            if (ksPropsFile.exists()) {
+                storeFile rootProject.file(ksProps['storeFile'])
+                storePassword ksProps['storePassword']
+                keyAlias ksProps['keyAlias']
+                keyPassword ksProps['keyPassword']
+                v1SigningEnabled true
+                v2SigningEnabled true
+                enableV3Signing true
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/*.kotlin_module', 'DebugProbesKt.bin']
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    // 提供 addDocumentStartJavaScript，让用户脚本能在 document-start 注入
+    implementation 'androidx.webkit:webkit:1.11.0'
+}

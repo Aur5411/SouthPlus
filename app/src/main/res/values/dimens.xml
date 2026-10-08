@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="np_bar_height">52dp</dimen>
+    <dimen name="np_nav_height">56dp</dimen>
+    <dimen name="np_gutter">16dp</dimen>
+</resources>

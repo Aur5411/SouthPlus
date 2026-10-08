@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">南+</string>
+    <string name="app_title">南+ South Plus</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_boards">版块</string>
+    <string name="tab_search">搜索</string>
+    <string name="tab_me">我的</string>
+
+    <string name="menu_home">回到首页</string>
+    <string name="menu_forward">前进</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_share">复制链接</string>
+    <string name="menu_night">夜间模式</string>
+    <string name="menu_noimage">无图模式</string>
+    <string name="menu_desktop">切换到电脑版</string>
+    <string name="menu_mobile">切换到移动版</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_open_browser">用浏览器打开</string>
+
+    <string name="site_group">访问站点</string>
+    <string name="menu_current_site">当前地址：%1$s · %2$s</string>
+    <string name="site_note">说明：这些域名指向同一套论坛程序，但 Cookie 是按域名单独保存的，换域名后需要重新登录。切换后当前页面会按新域名重新加载。</string>
+    <string name="site_hint">同一论坛有多个域名，哪个能直连因网络环境而异。打开哪一项的开关就用哪个域名。换域名后需要重新登录（Cookie 按域名保存）。</string>
+    <string name="site_custom">手动输入域名…</string>
+    <string name="site_custom_title">手动输入域名</string>
+    <string name="site_custom_hint">例如 north-plus.net</string>
+    <string name="site_bad_host">域名格式不对，请只填主机名</string>
+    <string name="site_test">测试各站点连通性</string>
+    <string name="site_testing">正在测试各站点…</string>
+    <string name="site_reachable">可直连</string>
+    <string name="site_unreachable">连不上</string>
+    <string name="site_none_reachable">所有站点都连不上，请检查网络，或在下面手动输入域名</string>
+    <string name="site_switched">已切换到 %1$s</string>
+    <string name="site_switch">换个可用站点</string>
+
+    <string name="set_mobile">使用移动版网页</string>
+    <string name="set_mobile_desc">默认关闭：使用电脑版页面 + 桌面 Chrome UA，站点功能与用户脚本才能完整生效。打开则切回站点的移动版模板。</string>
+
+    <string name="menu_userscripts">用户脚本</string>
+
+    <string name="us_enable">启用用户脚本</string>
+    <string name="us_enable_desc">关闭后将不再向任何网页注入脚本宿主</string>
+    <string name="us_recommend">推荐脚本</string>
+    <string name="us_rin_name">南加北加论坛强化脚本（凛+）</string>
+    <string name="us_rin_desc">作者 遠坂凛 · Greasyfork #454120 · MIT
+关注帖回复提醒、出售框警告、头像扩展信息、暗黑模式、快速搜索栏、焦点人物、帖子浏览记录等。
+一键安装会从下面选定的下载源取最新版，可在应用内直接更新。</string>
+    <string name="us_source_group">下载源</string>
+    <string name="us_source_title">选择下载源</string>
+    <string name="us_source_test">测试各源</string>
+    <string name="us_source_testing">正在测试各下载源…</string>
+    <string name="us_source_result">下载源连通性</string>
+    <string name="us_source_note">下载源说明：greasyfork.org 自 2025-02-06 起在国内无法直连，因此内置了几家国内镜像。安装时会同时向多个源发起请求，谁先返回就用谁，并记住可用的源；镜像失效时在这里换一个即可。</string>
+    <string name="us_update_now">一键更新凛+</string>
+    <string name="us_vpn_hint">如果一键下载不成功，请打开VPN后重试。</string>
+    <string name="us_rin_installed">当前已安装：%1$s</string>
+    <string name="us_rin_missing">尚未安装。软件已内置该脚本，正常情况下打开即是已安装状态；若列表里没有，点下面的按钮重新下载。</string>
+    <string name="us_update_failed">更新失败</string>
+    <string name="us_open_page">打开发布页</string>
+    <string name="us_install_url">从链接安装</string>
+    <string name="us_install_file">从文件安装</string>
+    <string name="us_installed">已安装</string>
+    <string name="us_empty">还没有安装任何脚本。\n也可以直接在网页里点击 .user.js 链接安装。</string>
+    <string name="us_delete">删除脚本</string>
+    <string name="us_note">说明：脚本以网页权限运行，可读写页面内容和你的登录状态。只安装你信任来源的脚本。脚本设置与启用状态保存在本机，升级脚本不会丢失。</string>
+    <string name="us_help_title">用户脚本</string>
+    <string name="us_help_body">本应用内置了一个用户脚本运行环境（等价于 Tampermonkey 的核心能力）：\n\n· 支持 GM.getValue / setValue / deleteValue / listValues\n· 支持 GM.notification / openInTab / registerMenuCommand / addStyle\n· 支持 @match / @include / @exclude 与 @run-at 的 document-start、document-end、document-idle\n· 在 document-start 注入，与油猴时序一致\n\n安装方式有三种：从推荐列表一键安装、粘贴 .user.js 链接安装、选择本地文件安装。在网页里点击 .user.js 链接也会直接进入安装流程。\n\n安装后脚本的新增按钮会出现在「⋮」菜单里。</string>
+
+    <string name="us_title_url">从链接安装</string>
+    <string name="us_hint_url">粘贴 .user.js 地址或脚本发布页地址</string>
+    <string name="us_bad_url">链接为空或格式不对</string>
+    <string name="us_file_failed">读取文件失败</string>
+
+    <string name="search_hint">搜索帖子 / 版块名</string>
+    <string name="search_site_hint">输入关键字站内搜索</string>
+    <string name="search_go">搜索</string>
+    <string name="search_filter">筛选版块</string>
+
+    <string name="settings">设置</string>
+    <string name="set_night">夜间模式</string>
+    <string name="set_night_desc">对网页内容应用深色配色，白底不再刺眼</string>
+    <string name="set_noimage">无图模式</string>
+    <string name="set_noimage_desc">屏蔽帖子内图片，节省流量</string>
+    <string name="set_imgtap">点击图片全屏查看</string>
+    <string name="set_imgtap_desc">在帖子中点任意图片可放大、保存</string>
+    <string name="set_adblock">广告过滤</string>
+    <string name="set_adblock_desc">屏蔽站点横幅广告图片与统计脚本</string>
+    <string name="set_zoom">双指缩放</string>
+    <string name="set_inapp_site">站内链接在应用内打开</string>
+    <string name="set_inapp_site_desc">默认开启。关闭后点击论坛内的链接会交给手机浏览器打开。</string>
+    <string name="set_inapp_external">站外链接在应用内打开</string>
+    <string name="set_inapp_external_desc">默认开启。关闭后点击外部网站的链接会交给手机浏览器打开。</string>
+    <string name="set_zoom_desc">允许页面上双指捏合缩放</string>
+    <string name="set_external">站外链接用浏览器打开</string>
+    <string name="set_external_desc">关闭后站外链接在应用内打开</string>
+    <string name="set_clearcookie">清除登录状态 / 缓存</string>
+    <string name="set_about">关于</string>
+    <string name="set_about_body">南+ 客户端 1.0.0\n基于 north-plus.net 移动版网页构建的第三方浏览客户端。\n内容均来自站点服务器，本应用不存储、不修改任何帖子数据。</string>
+
+    <string name="loading">正在加载…</string>
+    <string name="net_error">网络连接失败</string>
+    <string name="net_error_desc">请检查网络后重试</string>
+    <string name="retry">重试</string>
+    <string name="saved">已保存到相册</string>
+    <string name="save_failed">保存失败</string>
+    <string name="link_copied">链接已复制</string>
+    <string name="exit_hint">再按一次返回键退出</string>
+    <string name="no_permission">需要存储权限才能保存图片</string>
+    <string name="img_loading">加载中…</string>
+    <string name="img_count">%1$d / %2$d</string>
+    <string name="action_save">保存到相册</string>
+    <string name="action_share">分享</string>
+    <string name="action_copy">复制图片地址</string>
+    <string name="action_open">浏览器打开</string>
+</resources>

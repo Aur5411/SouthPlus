@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="np_bg">#FF101216</color>
+    <color name="np_bar">#FF171A20</color>
+    <color name="np_bar_line">#FF262A33</color>
+    <color name="np_text">#FFE9ECF1</color>
+    <color name="np_text_dim">#FF9098A6</color>
+    <color name="np_accent">#FF6E9BFF</color>
+    <color name="np_nav_bg">#FF171A20</color>
+    <color name="np_nav_active">#FF6E9BFF</color>
+    <color name="np_nav_idle">#FF7E8796</color>
+    <color name="np_progress">#FF6E9BFF</color>
+    <color name="np_ripple">#266E9BFF</color>
+    <color name="np_divider">#FF262A33</color>
+    <color name="np_chip">#FF23304A</color>
+</resources>

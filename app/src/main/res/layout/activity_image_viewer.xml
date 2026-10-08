@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewer_bg">
+
+    <ProgressBar
+        android:id="@+id/viewerProgress"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/viewer_text"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/viewerHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="56dp"
+        android:text="@string/img_loading"
+        android:textColor="#99FFFFFF"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/zoomImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/action_save"
+        android:scaleType="matrix"
+        android:visibility="gone" />
+
+    <!-- 顶栏 -->
+    <LinearLayout
+        android:id="@+id/viewerTop"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/viewer_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp">
+
+        <ImageView
+            android:id="@+id/viewerClose"
+            style="@style/NpToolButton"
+            android:contentDescription="@string/retry"
+            android:src="@drawable/ic_close"
+            android:tint="@color/viewer_text" />
+
+        <TextView
+            android:id="@+id/viewerCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/viewer_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/viewerOpen"
+            style="@style/NpToolButton"
+            android:contentDescription="@string/action_open"
+            android:src="@drawable/ic_open"
+            android:tint="@color/viewer_text" />
+    </LinearLayout>
+
+    <!-- 底栏 -->
+    <LinearLayout
+        android:id="@+id/viewerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/viewer_bar"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <LinearLayout
+            android:id="@+id/viewerSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_save"
+                android:tint="@color/viewer_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/action_save"
+                android:textColor="@color/viewer_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewerShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_share"
+                android:tint="@color/viewer_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/action_copy"
+                android:textColor="@color/viewer_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

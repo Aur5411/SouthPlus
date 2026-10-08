@@ -1,0 +1,27 @@
+# 构建产物
+build/
+*/build/
+.gradle/
+out/
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 本机相关
+local.properties
+
+# 签名密钥与口令（绝不入库）
+keystore.properties
+*.jks
+*.keystore
+
+# 抓取样本与一次性逆向脚本
+tools/fixtures/
+tools/recon/
+
+# 杂项
+*.log
+.DS_Store
+Thumbs.db
